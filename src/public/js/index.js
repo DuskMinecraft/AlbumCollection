@@ -85,4 +85,55 @@ function onReSize(){
     }
 }
 
+function onUserClickJumpButton(name) {
+    switch (name) {
+        case "首页" :
+            window.open("http://www.duskmc.cn");
+            break;
+
+        case "关于" :
+            window.open("http://www.duskmc.cn/about/");
+            break;
+
+        case "文档" :
+            window.open("http://doc.duskmc.cn");
+            break;
+
+        case "相册" :
+            location.reload();
+            break;
+    }
+}
+
+function onUserClickMenuButton() {
+    const headerMenuNavbar = document.getElementById("header").getElementsByClassName("menu-navbar").item(0);
+    let atr = headerMenuNavbar.getAttributeNode("hidden");
+    if (atr != null) {
+        headerMenuNavbar.removeAttributeNode(atr);
+    } else {
+        atr = document.createAttribute("hidden");
+        atr.nodeValue = "hidden";
+        headerMenuNavbar.setAttributeNode(atr);
+    }
+
+    const headerNavbarMenu = document.getElementById("header").getElementsByClassName("header-navbar").item(0).getElementsByClassName("button-header-navbar-menu").item(0);
+    const src = headerNavbarMenu.getAttributeNode("src");
+    headerNavbarMenu.removeAttributeNode(src);
+    if (src.nodeValue === "../public/img/menu.png") {
+        src.nodeValue = "../public/img/menu-open.png";
+        headerNavbarMenu.setAttributeNode(src);
+        const headerMenuNavbar = document.getElementById("header").getElementsByClassName("menu-navbar").item(0);
+        let posAtr = document.createAttribute("top");
+        let msg = new Map();
+        msg.set("headerMenuNavbar",headerMenuNavbar);
+        msg.set("posAtr",posAtr);
+        //new Worker("../public/js/thread/MenuThread.js").postMessage(msg);
+    } else {
+        src.nodeValue = "../public/img/menu.png"
+        headerNavbarMenu.setAttributeNode(src);
+    }
+
+
+}
+
 

@@ -13,3 +13,12 @@ function getResolution() {
         return null;
     }
 }
+
+function sleep(time) {
+    const start = new Date().getTime();
+    while (true) {
+        if (new Date().getTime() - start > name) {
+            break;
+        }
+    }
+}

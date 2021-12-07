@@ -10,6 +10,7 @@
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 2;
 }
 
 .header-navbar{
@@ -95,3 +96,53 @@
     font-family: LanTing, serif ;
     cursor: pointer;
 }
+
+.menu-navbar {
+    position: fixed;
+    top: 51px;
+    left: 0;
+    height: 197px;
+    width: 101%;
+    animation: open 650ms ease 0ms 1;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.button-header-menu-navbar-jump {
+    left: -1px;
+    width: 101%;
+    height: 50px;
+    color: white;
+    background-color: black;
+    opacity: 75%;
+    border: 0.5px solid white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    font-family: LanTing, serif ;
+}
+
+.button-header-menu-navbar-jump-1 {
+    position: absolute;
+    top: 0;
+}
+
+.button-header-menu-navbar-jump-2 {
+    position: absolute;
+    top: 49px;
+}
+
+.button-header-menu-navbar-jump-3 {
+    position: absolute;
+    top: 98px;
+}
+
+.button-header-menu-navbar-jump-4 {
+    position: absolute;
+    top: 147px;
+}
+
+
+
+
