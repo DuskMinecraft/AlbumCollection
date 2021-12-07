@@ -1,0 +1,97 @@
+@font-face{
+    font-family: LanTing;
+    src: url("../font/LanTing.ttf")
+}
+
+.header {
+    background-color: #ff722b;
+    position: fixed;
+    height: 51px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.header-navbar{
+    position: absolute;
+    height: 51px;
+    width: 70%;
+    left: 15%;
+}
+
+.text-header-navbar-title {
+    color: white;
+    position: absolute;
+    font-size: 130%;
+    top: -3.25px;
+    left: 70px;
+    font-family: Minecraft, serif;
+    /* text-shadow:  grey 2px 0 0, grey 0 2px 0, grey -2px 0 0, grey 0 -2px 0; */
+}
+
+.img-header-navbar-logo {
+    position: absolute;
+    height: 80%;
+    top: 5px;
+    left: 17px;
+    border-radius: 5px;
+}
+
+.button-header-navbar-menu {
+    position: absolute;
+    height: 30px;
+    top: 10px;
+    right: 10px;
+}
+
+.button-header-navbar-jump-1 {
+    position: absolute;
+    top: 13px;
+    right: 185px;
+    color: white;
+    background-color: #ff722b;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    font-family: LanTing, serif ;
+    cursor: pointer;
+}
+
+.button-header-navbar-jump-2 {
+    position: absolute;
+    top: 13px;
+    right: 125px;
+    color: white;
+    background-color: #ff722b;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    font-family: LanTing, serif ;
+    cursor: pointer;
+}
+
+.button-header-navbar-jump-3 {
+    position: absolute;
+    top: 13px;
+    right: 70px;
+    color: white;
+    background-color: #ff722b;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    font-family: LanTing, serif ;
+    cursor: pointer;
+}
+
+.button-header-navbar-jump-4 {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    color: white;
+    background-color: #ff722b;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    font-family: LanTing, serif ;
+    cursor: pointer;
+}
